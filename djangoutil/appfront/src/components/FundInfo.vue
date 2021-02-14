@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>基金监控信息</h1>
-    <Button @click="loadFundInfo" type="primary" shape="circle" icon="ios-search">查询基金信息</Button>
+    <Button @click="loadFundInfo" type="primary" shape="circle" icon="ios-search">查询基金监控信息</Button>
     <Table :columns="fundInfoListText" :data="fundInfoList"></Table>
   </div>
 </template>
