@@ -122,6 +122,8 @@ LOGGING = {
 
 # rest_framework相关配置
 REST_FRAMEWORK = {
+    # 配置生成自动API文档
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
     # 分页
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',  # LimitOffsetPagination 分页风格
     'PAGE_SIZE': 10,  # 每页多少条记录
