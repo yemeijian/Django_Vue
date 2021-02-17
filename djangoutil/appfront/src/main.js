@@ -5,6 +5,9 @@ import router from './router'
 import ViewUI from 'view-design'
 import 'view-design/dist/styles/iview.css'
 import Index from './Index'
+import apiurl from './api/apiurl'
+
+Vue.prototype.apiurl = apiurl
 Vue.config.productionTip = false
 
 // ViewUI的全局配置
@@ -22,6 +25,6 @@ Vue.use(ViewUI, {
 new Vue({
   el: '#index',
   router,
-  components: { Index },
+  components: {Index},
   template: '<Index/>'
 })
