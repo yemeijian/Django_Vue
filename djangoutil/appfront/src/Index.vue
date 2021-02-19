@@ -55,7 +55,7 @@
                                 <Icon type="ios-navigate"></Icon>
                                 Item 1
                             </template>
-                            <MenuItem name="1-1">基金监控</MenuItem>
+                            <MenuItem name="1-1" to="/fundInfo">基金监控</MenuItem>
                         </Submenu>
                         <Submenu name="2">
                             <template slot="title">
@@ -82,7 +82,7 @@
                         <BreadcrumbItem>Layout</BreadcrumbItem>
                     </Breadcrumb>
                     <Content :style="{padding: '24px', minHeight: '280px', background: '#fff'}">
-                      <FundInfo/>
+                      <router-view/>
                     </Content>
                 </Layout>
             </Layout>
