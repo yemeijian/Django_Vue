@@ -2,6 +2,14 @@ import axiosInstance from './index'
 
 const axios = axiosInstance
 
+// 获取菜单
+export const getMenu = () => {
+  try {
+    return axios.get('../admin/api/menu/')
+  } catch (e) {
+    console.log(e)
+  }
+}
 export const getFundInfo = () => {
   try {
     return axios.get('../api/fundinfo/')

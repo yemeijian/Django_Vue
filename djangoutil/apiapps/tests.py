@@ -1,3 +1,5 @@
+import os
+
 from django.test import TestCase
 
 # Create your tests here.
@@ -13,8 +15,11 @@ from email.header import Header
 from apscheduler.schedulers.blocking import BlockingScheduler
 
 # import logging
-respose = requests.get("http://localhost:8000/api/fundinfo/")
-print(respose.json())
+# respose = requests.get("http://localhost:8000/api/fundinfo/")
+# print(respose.json())
+
+
+print(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
 #
 #
 # logging.basicConfig(format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s',

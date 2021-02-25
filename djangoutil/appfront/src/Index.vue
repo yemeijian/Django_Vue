@@ -62,7 +62,7 @@
                                 <Icon type="ios-keypad"></Icon>
                                 Item 2
                             </template>
-                            <MenuItem name="2-1">Option 1</MenuItem>
+                            <MenuItem name="2-1" to="/randomimage">随机图片</MenuItem>
                             <MenuItem name="2-2">Option 2</MenuItem>
                         </Submenu>
                         <Submenu name="3">

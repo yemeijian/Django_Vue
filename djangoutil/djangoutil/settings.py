@@ -29,6 +29,7 @@ ALLOWED_HOSTS = ['*']  # 表示任何域名都能访问。如果指定域名的�
 # Application definition
 
 INSTALLED_APPS = [
+    'simpleui',  # 注册后台模板simpleui
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,8 +39,9 @@ INSTALLED_APPS = [
     'rest_framework',  # 导入rest_framework 模块
     'rest_framework.authtoken',  # 用于前后端分离，携带token
     'corsheaders',  # 跨域问题
-    'webapps.apps.WebappsConfig',  # 注册webapps应用
-    'apiapps.apps.ApiappsConfig',  # 注册apiapps应用
+    'webapps.apps.WebappsConfig',  # 注册webapps应用：前端预备
+    'apiapps.apps.ApiappsConfig',  # 注册apiapps应用：接口应用
+    'adminapps.apps.AdminappsConfig',   # 注册adminapps应用：Django Admin后台
 ]
 
 MIDDLEWARE = [
@@ -58,7 +60,7 @@ ROOT_URLCONF = 'djangoutil.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'dist')],   # Vue前端打包文件配置
+        'DIRS': [os.path.join(BASE_DIR, 'dist')],  # Vue前端打包文件配置
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -119,6 +121,8 @@ LOGGING = {
         },
     }
 }
+# simpleui相关设置
+SIMPLEUI_HOME_INFO = False
 
 # rest_framework相关配置
 REST_FRAMEWORK = {
@@ -160,13 +164,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+# 把APP静态资源收集到指定目录下
+STATIC_ROOT = os.path.join(BASE_DIR, 'dist/static')
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'dist/static'),
+    # os.path.join(BASE_DIR, 'dist/static'),
+    os.path.join(BASE_DIR, 'common_static'),
 ]
 
-# 把APP静态资源收集到指定目录下
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-# 上传文件的路径配置
+
+# 指定上传文件的存储路径（相对路径，用于读取文件）
 MEDIA_URL = "/media/"
+
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
