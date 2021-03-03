@@ -8,7 +8,8 @@ from rest_framework.routers import DefaultRouter
 
 from adminapps import views
 
-router = DefaultRouter()
-router.register(prefix='menu', viewset=views.SubMenuViewSet)  # prefix：接口前缀，viewset：视图集ViewSet
+# router = DefaultRouter()
+# router.register(prefix='menu', viewset=views.SubMenuView)  # prefix：接口前缀，viewset：视图集ViewSet
 urlpatterns = [
-    path('', include(router.urls))]
+    path('menu/', views.SubMenuView.as_view())
+]

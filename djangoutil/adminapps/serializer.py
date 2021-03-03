@@ -5,10 +5,19 @@
 # @desc:
 from rest_framework import serializers
 
-from adminapps.models import SubMenu
+from adminapps.models import SubMenu, Menu
+
+
+class MenuSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Menu
+        fields = '__all__'
 
 
 class SubMenuSerializer(serializers.ModelSerializer):
+    # 外键查询对应的值，一定要放在Meta外面
+    parentMenuName = serializers.ReadOnlyField(source='parentMenu.menuName')
+
     class Meta:
         model = SubMenu
         fields = '__all__'

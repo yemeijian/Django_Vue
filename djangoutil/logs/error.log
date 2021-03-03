@@ -1,0 +1,1479 @@
+[2021-02-27 22:42:47,061][Thread-1:15168][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+[2021-02-27 22:42:50,264][Thread-1:15168][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+[2021-02-27 22:51:01,249][Thread-1:11780][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\fields.py", line 95, in get_attribute
+    instance = instance[attr]
+KeyError: 'subMenuPermissionId'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 32, in get
+    return Response(result.data, status=status.HTTP_200_OK)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 745, in data
+    ret = super().data
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 663, in to_representation
+    return [
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+KeyError: "Got KeyError when attempting to get a value for field `subMenuPermissionId` on serializer `SubMenuSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'subMenuPermissionId'."
+[2021-02-27 22:51:02,018][Thread-1:11780][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\fields.py", line 95, in get_attribute
+    instance = instance[attr]
+KeyError: 'subMenuPermissionId'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 32, in get
+    return Response(result.data, status=status.HTTP_200_OK)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 745, in data
+    ret = super().data
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 663, in to_representation
+    return [
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+KeyError: "Got KeyError when attempting to get a value for field `subMenuPermissionId` on serializer `SubMenuSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'subMenuPermissionId'."
+[2021-02-27 22:51:02,634][Thread-1:11780][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\fields.py", line 95, in get_attribute
+    instance = instance[attr]
+KeyError: 'subMenuPermissionId'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 32, in get
+    return Response(result.data, status=status.HTTP_200_OK)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 745, in data
+    ret = super().data
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 663, in to_representation
+    return [
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+KeyError: "Got KeyError when attempting to get a value for field `subMenuPermissionId` on serializer `SubMenuSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'subMenuPermissionId'."
+[2021-02-27 22:51:02,850][Thread-1:11780][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\fields.py", line 95, in get_attribute
+    instance = instance[attr]
+KeyError: 'subMenuPermissionId'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 32, in get
+    return Response(result.data, status=status.HTTP_200_OK)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 745, in data
+    ret = super().data
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 663, in to_representation
+    return [
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+KeyError: "Got KeyError when attempting to get a value for field `subMenuPermissionId` on serializer `SubMenuSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'subMenuPermissionId'."
+[2021-02-27 22:51:03,089][Thread-1:11780][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\fields.py", line 95, in get_attribute
+    instance = instance[attr]
+KeyError: 'subMenuPermissionId'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 32, in get
+    return Response(result.data, status=status.HTTP_200_OK)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 745, in data
+    ret = super().data
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 663, in to_representation
+    return [
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+KeyError: "Got KeyError when attempting to get a value for field `subMenuPermissionId` on serializer `SubMenuSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'subMenuPermissionId'."
+[2021-02-27 22:51:03,513][Thread-1:11780][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\fields.py", line 95, in get_attribute
+    instance = instance[attr]
+KeyError: 'subMenuPermissionId'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 32, in get
+    return Response(result.data, status=status.HTTP_200_OK)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 745, in data
+    ret = super().data
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 663, in to_representation
+    return [
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+KeyError: "Got KeyError when attempting to get a value for field `subMenuPermissionId` on serializer `SubMenuSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'subMenuPermissionId'."
+[2021-02-27 22:51:03,697][Thread-1:11780][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\fields.py", line 95, in get_attribute
+    instance = instance[attr]
+KeyError: 'subMenuPermissionId'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 32, in get
+    return Response(result.data, status=status.HTTP_200_OK)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 745, in data
+    ret = super().data
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 663, in to_representation
+    return [
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+KeyError: "Got KeyError when attempting to get a value for field `subMenuPermissionId` on serializer `SubMenuSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'subMenuPermissionId'."
+[2021-02-27 22:51:03,872][Thread-1:11780][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\fields.py", line 95, in get_attribute
+    instance = instance[attr]
+KeyError: 'subMenuPermissionId'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 32, in get
+    return Response(result.data, status=status.HTTP_200_OK)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 745, in data
+    ret = super().data
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 663, in to_representation
+    return [
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+KeyError: "Got KeyError when attempting to get a value for field `subMenuPermissionId` on serializer `SubMenuSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'subMenuPermissionId'."
+[2021-02-27 22:52:51,996][Thread-1:5696][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 31, in get
+    print(i['subMenuName'])
+TypeError: 'SubMenu' object is not subscriptable
+[2021-02-27 22:53:15,340][Thread-1:9288][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 31, in get
+    print(i[0])
+TypeError: 'SubMenu' object is not subscriptable
+[2021-02-27 22:53:15,962][Thread-1:9288][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 31, in get
+    print(i[0])
+TypeError: 'SubMenu' object is not subscriptable
+[2021-02-27 22:53:16,147][Thread-1:9288][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 31, in get
+    print(i[0])
+TypeError: 'SubMenu' object is not subscriptable
+[2021-02-27 22:53:16,305][Thread-1:9288][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 31, in get
+    print(i[0])
+TypeError: 'SubMenu' object is not subscriptable
+[2021-02-27 22:53:16,514][Thread-1:9288][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 31, in get
+    print(i[0])
+TypeError: 'SubMenu' object is not subscriptable
+[2021-02-27 22:53:16,739][Thread-1:9288][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 31, in get
+    print(i[0])
+TypeError: 'SubMenu' object is not subscriptable
+[2021-02-27 22:53:16,938][Thread-1:9288][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 31, in get
+    print(i[0])
+TypeError: 'SubMenu' object is not subscriptable
+[2021-02-27 22:53:18,554][Thread-1:9288][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 31, in get
+    print(i[0])
+TypeError: 'SubMenu' object is not subscriptable
+[2021-02-27 22:54:06,314][Thread-1:3780][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 31, in get
+    print(i[0])
+KeyError: 0
+[2021-02-27 22:54:08,144][Thread-1:3780][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 31, in get
+    print(i[0])
+KeyError: 0
+[2021-02-27 23:37:21,881][Thread-1:2276][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 33, in get
+    menuJson['parentMenuName'] = i['parentMenuName']
+TypeError: string indices must be integers
+[2021-02-27 23:37:22,821][Thread-1:2276][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 33, in get
+    menuJson['parentMenuName'] = i['parentMenuName']
+TypeError: string indices must be integers
+[2021-02-27 23:37:23,220][Thread-1:2276][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 33, in get
+    menuJson['parentMenuName'] = i['parentMenuName']
+TypeError: string indices must be integers
+[2021-02-27 23:37:23,380][Thread-1:2276][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 33, in get
+    menuJson['parentMenuName'] = i['parentMenuName']
+TypeError: string indices must be integers
+[2021-02-27 23:37:47,690][Thread-1:14064][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 33, in get
+    menuJson['parentMenuName'] = i[0]['parentMenuName']
+KeyError: 0
+[2021-02-27 23:37:48,398][Thread-1:14064][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 33, in get
+    menuJson['parentMenuName'] = i[0]['parentMenuName']
+KeyError: 0
+[2021-02-27 23:37:48,641][Thread-1:14064][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 33, in get
+    menuJson['parentMenuName'] = i[0]['parentMenuName']
+KeyError: 0
+[2021-02-27 23:37:48,807][Thread-1:14064][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 33, in get
+    menuJson['parentMenuName'] = i[0]['parentMenuName']
+KeyError: 0
+[2021-02-27 23:37:48,983][Thread-1:14064][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 33, in get
+    menuJson['parentMenuName'] = i[0]['parentMenuName']
+KeyError: 0
+[2021-02-28 00:05:08,543][Thread-1:1092][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 47, in get
+    menuJson['subMenuList'].append(subMenuList)
+KeyError: 'subMenuList'
+[2021-02-28 00:05:09,456][Thread-1:1092][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 47, in get
+    menuJson['subMenuList'].append(subMenuList)
+KeyError: 'subMenuList'
+[2021-02-28 00:05:09,830][Thread-1:1092][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 47, in get
+    menuJson['subMenuList'].append(subMenuList)
+KeyError: 'subMenuList'
+[2021-02-28 00:05:10,030][Thread-1:1092][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 47, in get
+    menuJson['subMenuList'].append(subMenuList)
+KeyError: 'subMenuList'
+[2021-02-28 00:13:52,744][Thread-1:11200][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 43, in get
+    if i['parentMenuName'] not in menu:
+KeyError: 'parentMenuName'
+[2021-02-28 00:13:55,079][Thread-1:11200][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 43, in get
+    if i['parentMenuName'] not in menu:
+KeyError: 'parentMenuName'
+[2021-02-28 00:13:55,982][Thread-1:11200][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 43, in get
+    if i['parentMenuName'] not in menu:
+KeyError: 'parentMenuName'
+[2021-02-28 00:13:58,318][Thread-1:11200][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 43, in get
+    if i['parentMenuName'] not in menu:
+KeyError: 'parentMenuName'
+[2021-02-28 00:15:01,734][Thread-1:8532][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 43, in get
+    if i['parentMenuName'] not in menu:
+KeyError: 'parentMenuName'
+[2021-02-28 00:15:02,413][Thread-1:8532][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 43, in get
+    if i['parentMenuName'] not in menu:
+KeyError: 'parentMenuName'
+[2021-02-28 00:15:02,651][Thread-1:8532][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 43, in get
+    if i['parentMenuName'] not in menu:
+KeyError: 'parentMenuName'
+[2021-02-28 00:17:01,153][Thread-1:8600][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 42, in get
+    if i['parentMenuName'] not in menuList[0]:
+IndexError: list index out of range
+[2021-02-28 00:17:05,289][Thread-1:8600][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 42, in get
+    if i['parentMenuName'] not in menuList[0]:
+IndexError: list index out of range
+[2021-02-28 00:21:18,381][Thread-1:7808][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 40, in get
+    menuJson[parentMenuId]['subMenuList'].appen(i)
+AttributeError: 'collections.OrderedDict' object has no attribute 'appen'
+[2021-02-28 00:21:19,105][Thread-1:7808][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 40, in get
+    menuJson[parentMenuId]['subMenuList'].appen(i)
+AttributeError: 'collections.OrderedDict' object has no attribute 'appen'
+[2021-02-28 00:21:19,436][Thread-1:7808][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 40, in get
+    menuJson[parentMenuId]['subMenuList'].appen(i)
+AttributeError: 'collections.OrderedDict' object has no attribute 'appen'
+[2021-02-28 00:21:19,612][Thread-1:7808][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 40, in get
+    menuJson[parentMenuId]['subMenuList'].appen(i)
+AttributeError: 'collections.OrderedDict' object has no attribute 'appen'
+[2021-02-28 00:21:19,997][Thread-1:7808][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 40, in get
+    menuJson[parentMenuId]['subMenuList'].appen(i)
+AttributeError: 'collections.OrderedDict' object has no attribute 'appen'
+[2021-02-28 00:21:20,180][Thread-1:7808][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 40, in get
+    menuJson[parentMenuId]['subMenuList'].appen(i)
+AttributeError: 'collections.OrderedDict' object has no attribute 'appen'
+[2021-02-28 00:21:20,371][Thread-1:7808][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 40, in get
+    menuJson[parentMenuId]['subMenuList'].appen(i)
+AttributeError: 'collections.OrderedDict' object has no attribute 'appen'
+[2021-02-28 00:21:20,539][Thread-1:7808][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 40, in get
+    menuJson[parentMenuId]['subMenuList'].appen(i)
+AttributeError: 'collections.OrderedDict' object has no attribute 'appen'
+[2021-02-28 00:23:48,438][Thread-1:9020][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 46, in get
+    menuJson[parentMenuId]['subMenuList'].appen(
+AttributeError: 'list' object has no attribute 'appen'
+[2021-02-28 00:23:49,414][Thread-1:9020][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 46, in get
+    menuJson[parentMenuId]['subMenuList'].appen(
+AttributeError: 'list' object has no attribute 'appen'
+[2021-02-28 00:23:49,988][Thread-1:9020][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 46, in get
+    menuJson[parentMenuId]['subMenuList'].appen(
+AttributeError: 'list' object has no attribute 'appen'
+[2021-02-28 00:23:50,179][Thread-1:9020][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 46, in get
+    menuJson[parentMenuId]['subMenuList'].appen(
+AttributeError: 'list' object has no attribute 'appen'
+[2021-02-28 00:23:50,380][Thread-1:9020][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 46, in get
+    menuJson[parentMenuId]['subMenuList'].appen(
+AttributeError: 'list' object has no attribute 'appen'
+[2021-02-28 00:23:50,685][Thread-1:9020][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 46, in get
+    menuJson[parentMenuId]['subMenuList'].appen(
+AttributeError: 'list' object has no attribute 'appen'
+[2021-02-28 00:23:51,028][Thread-1:9020][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 46, in get
+    menuJson[parentMenuId]['subMenuList'].appen(
+AttributeError: 'list' object has no attribute 'appen'
+[2021-02-28 00:26:25,127][Thread-1:9308][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 46, in get
+    menuJson[parentMenuId]['subMenuList'].appen(
+AttributeError: 'list' object has no attribute 'appen'
+[2021-02-28 00:26:26,101][Thread-1:9308][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 46, in get
+    menuJson[parentMenuId]['subMenuList'].appen(
+AttributeError: 'list' object has no attribute 'appen'
+[2021-02-28 00:26:26,621][Thread-1:9308][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 46, in get
+    menuJson[parentMenuId]['subMenuList'].appen(
+AttributeError: 'list' object has no attribute 'appen'
+[2021-02-28 00:26:26,812][Thread-1:9308][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 46, in get
+    menuJson[parentMenuId]['subMenuList'].appen(
+AttributeError: 'list' object has no attribute 'appen'
+[2021-02-28 00:26:27,022][Thread-1:9308][task_id:django.request][log.py:224][ERROR][Internal Server Error: /admin/api/menu/]
+Traceback (most recent call last):
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\MyStudy\Python\Python3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\MyStudy\Django_Vue\djangoutil\adminapps\views.py", line 46, in get
+    menuJson[parentMenuId]['subMenuList'].appen(
+AttributeError: 'list' object has no attribute 'appen'

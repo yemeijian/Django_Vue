@@ -36,8 +36,8 @@ class SubMenu(models.Model):
     子菜单模型
     """
     subMenuName = models.CharField(verbose_name='子菜单名字', max_length=20)
-    parentMenu = models.ForeignKey("Menu", verbose_name='父级菜单', null=True, blank=True,
-                                      help_text='添加子菜单，请选择父级菜单', on_delete=models.SET_NULL)
+    parentMenu = models.ForeignKey(Menu, verbose_name='父级菜单', null=True, blank=True,
+                                   help_text='添加子菜单，请选择父级菜单', on_delete=models.SET_NULL)
     subMenuShow = models.BooleanField(verbose_name='是否显示', default=False, help_text='子菜单是否显示，默认添加不显示')
     subMenuUrl = models.CharField(verbose_name='子菜单Url地址', max_length=50, null=True, blank=True,
                                   default='javascript:void(0)',
@@ -46,9 +46,6 @@ class SubMenu(models.Model):
                                           help_text='子菜单显示优先级顺序，优先级越大显示越靠前')
     subMenuPermissionId = models.IntegerField(verbose_name='子菜单权限Id', help_text='给子菜单设置权限Id，用于菜单权限控制',
                                               error_messages={'field-subMenuPermissionId': '只能输入数字'})
-
-    def __str__(self):
-        return self.subMenuName
 
     class Meta:
         db_table = "adminapps_submenu_info"

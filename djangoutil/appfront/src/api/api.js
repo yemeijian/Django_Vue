@@ -5,7 +5,7 @@ const axios = axiosInstance
 // 获取菜单
 export const getMenu = () => {
   try {
-    return axios.get('../admin/api/menu/')
+    return axios.get('http://localhost:8000/admin/api/menu/')
   } catch (e) {
     console.log(e)
   }
